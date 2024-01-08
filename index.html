@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Assignment One</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="image/logo2.png" class="img-fluid" alt="" width="150px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-white">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#heroSection">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#2">Verify age</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#3">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#heroSection">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="heroSection" id="heroSection">
+        <div class="container d-flex flex-column justify-content-center align-items-center text-white hero-section-details">
+            <h1>Assignment One</h1>
+            <hr class="w-25 text-white">
+            <p class="text-center">Create a page with HTML, raw CSS or bootstrap. It has to be responsive. Make a banner. There should be some cards under the banner containing an image and some more information like title, short description. Make sure to put a navbar and footer
+                too. -> Take an input field for age -> if the age is greater than or equal to 18, show a card saying “You are an adult”. Else show a card saying “You are a child”</p>
+            <a class="btn btn-outline-light btn-boader1" href="#contact">Contact Us</a>
+        </div>
+    </section>
+    <div id="2" class="age">
+        <div class="page-header">
+            <div class="container">
+                <h1>Welcome to Our Service</h1>
+                <p>Please verify your age to continue</p>
+            </div>
+        </div>
+        <div class="container age">
+            <div class="age-form-container mx-auto text-center">
+                <form id="ageForm" action="javascript:void(0);">
+                    <div class="mb-4">
+                        <input type="text" class="form-control text-center" id="ageInput" placeholder="Enter your age here" required>
+                    </div>
+                    <button type="submit" class="btn btn-custom btn-primary btn-lg shadow-sm">Submit</button>
+                </form>
+                <div id="feedback" class="feedback alert mt-3"></div>
+            </div>
+        </div>
+    </div>
+    <div id="3" class="age">
+        <div class="container pb-5" id="Service">
+            <div class="container common-heading text-center pb-3">
+                <h2 class="">
+                    Our Services
+                </h2>
+                <hr class="w-25 text-dark mx-auto">
+            </div>
+            <div class="row g-4 ">
+                <div class="col-lg-4">
+                    <div class="card" style="">
+                        <img src="image/pexels-stas-knop-2520829.jpg" class="card-img-top img-fluid" alt="..." width="">
+                        <div class="card-body">
+                            <h5 class="card-title">The Evolution of Gaming: From Pixels to Virtual Reality</h5>
+                            <p class="card-text">Explore the transformative journey of gaming, tracing its evolution from pixelated beginnings to the immersive realms of virtual reality, showcasing the technological advancements that have shaped the gaming landscape.</p>
+                            <a href="#" class="btn btn-boader">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card" style="">
+                        <img src="image/pexels-rdne-stock-project-7915432.jpg" class="card-img-top  img-fluid" alt="..." width="">
+                        <div class="card-body">
+                            <h5 class="card-title">Gaming for Good: How Video Games are Changing the World</h5>
+                            <p class="card-text">Uncover the positive impact of video games, delving into their charitable, educational, and therapeutic contributions to society, demonstrating how the gaming industry goes beyond entertainment to make a meaningful difference.</p>
+                            <a href="#" class="btn btn-boader">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6">
+                    <div class="card" style="">
+                        <img src="image/pexels-alena-darmel-7862517.jpg" class="card-img-top  img-fluid" alt="..." width="" height="">
+                        <div class="card-body">
+                            <h5 class="card-title">Rising Stars: Indie Games Shaping the Future of Gaming</h5>
+                            <p class="card-text">Dive into the world of indie game development, highlighting the creative and innovative contributions of smaller studios that are shaping the future of gaming with unique storytelling, groundbreaking gameplay, and a diverse
+                                gaming landscape.
+                            </p>
+                            <a href="#" class="btn btn-boader">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <p>Dhaka ,Bangladesh</p>
+                    <p><a href="mailto:mdjamsad60@gmail.com">mdjamsad60@gmail.com</a></p>
+                    <p><a href="tel:+8801792090113">+8801792090113</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#heroSection">Home</a></li>
+                        <li><a href="#2">Verify age</a></li>
+                        <li><a href="#3">Blog</a></li>
+                        <li><a href="#heroSection">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Follow Us</h3>
+                    <div class="icon">
+                        <a href="https://www.facebook.com/DeveloperJamshed/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/Jamshed_Dev"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/jamshed_dev/"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container foot">
+                <p class="mb-0">&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        const ageForm = document.getElementById('ageForm');
+        const feedback = document.getElementById('feedback');
+        ageForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const ageValue = document.getElementById('ageInput').value;
+            feedback.style.display = 'none';
+            setTimeout(() => {
+                const age = parseInt(ageValue, 10);
+                if (!isNaN(age)) {
+                    if (age >= 18) {
+                        feedback.className = 'feedback alert alert-success animation-fade-in';
+                        feedback.textContent = "You are an adult.";
+                    } else {
+                        feedback.className = 'feedback alert alert-danger animation-fade-in';
+                        feedback.textContent = "You are a child.";
+                    }
+                } else {
+                    feedback.className = 'feedback alert alert-warning animation-fade-in';
+                    feedback.textContent = "Please enter a valid number for your age.";
+                }
+                feedback.style.display = 'block';
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
